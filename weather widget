@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Widget</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 8px;
+      background: transparent;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<a class="weatherwidget-io"
+   href="https://forecast7.com/en/10d82106d63/ho-chi-minh-city/"
+   data-label_1="HO CHI MINH CITY"
+   data-label_2="WEATHER"
+   data-theme="original">
+   HO CHI MINH CITY WEATHER
+</a>
+
+<script>
+!function(d,s,id){
+  var js,fjs=d.getElementsByTagName(s)[0];
+  if(!d.getElementById(id)){
+    js=d.createElement(s);
+    js.id=id;
+    js.src='https://weatherwidget.io/js/widget.min.js';
+    fjs.parentNode.insertBefore(js,fjs);
+  }
+}(document,'script','weatherwidget-io-js');
+</script>
+
+</body>
+</html>
